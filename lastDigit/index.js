@@ -1,8 +1,5 @@
 var lastDigit=function(a ,b) { 
-    let modA = a % 10;
-    let modB = b % 10;
-    
-    if (modA == modB || modA == modC || modB == modC) {
+ if (a % 10 == b % 10) {
         return true;
     } else
     return false;
