@@ -1,12 +1,11 @@
 var doubleX=function(str) { 
-    let i = str.indexOf("x");
-    if (i == -1) {
+    str.toLowerCase();
+    let x = str.indexOf('x');
+    if(x == -1) {
+        return false;
+    } if (x >= str.length) {
         return false;
     }
-    if (i + 1 >= str.length) {
-        return false;
-    } else {
-        return true;
-    }
+    return str.substring(x + 1, x + 2) == "x";
 }
-console.log(doubleX("sexxi"));
+console.log(doubleX('axxbb'));
